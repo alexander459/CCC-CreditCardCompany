@@ -1,0 +1,166 @@
+:root {
+    --my_yellow: #ffc92e;
+    --my_green: #02b602;
+    --my_gray: #DFDFDF;
+}
+
+body{
+    overflow: hidden;
+}
+
+.title-container{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.button-container{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button-container button{
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    border: ridge 3px;
+    background-color: beige;
+}
+.button-container button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/*a div that contains buttons in a row*/
+.row-btn-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.row-btn-container button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: ridge 3px;
+}
+.row-btn-container button:hover{
+    cursor: pointer;
+    border: inset 3px;
+}
+
+/*contains a message*/
+.msg-container{
+    padding: 30px;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn{
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: ridge 3px;
+    background: var(--my_yellow);
+}
+.submit-btn:hover{
+    cursor: pointer;
+    border: inset 3px;
+}
+
+form table{
+    border-collapse: collapse;
+    background: var(--my_gray);
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+form table th{
+    padding: 5px;
+    border: solid 3px white;
+    text-align: center;
+}
+form table td{
+    padding: 5px;
+    border: solid 3px white;
+    text-align: center;
+}
+form table td input, select{
+    width: 90%;
+    text-align: center;
+}
+
+
+.scroll-container{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 450px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+.scroll-container thead th{
+    padding: 10px;
+    background: var(--my_green);
+    color: black;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border: solid 3px white;
+}
+.scroll-container table{
+    background: var(--my_gray);
+    width: 100%;
+    border-collapse: collapse;
+}
+.scroll-container table td{
+    padding: 5px;
+    text-align: center;
+    border: solid 3px white;
+}
+.scroll-container table td button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 13px;
+    border: ridge 3px;
+    background-color: darkcyan;
+}
+
+/*a div that contains buttons in a column*/
+.col-btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 300px;
+}
+.col-btn-container button{
+    border: solid 1px;
+    border-radius: 30px;
+    font-size: 23px;
+    height: 60px;
+    background: beige;
+}
+.col-btn-container button:hover{
+    cursor: pointer;
+}
